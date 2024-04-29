@@ -1,0 +1,49 @@
+.product{
+    &-box{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        margin: 10px;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: #fff;
+        &:hover{
+            .product-img{
+                transform: scale(1.1);
+            }
+        }
+    }
+    &-img{
+        min-height: 400px;
+        max-height: 400px;
+        width: 100%;
+        transition: all 0.3s;
+        overflow: hidden;
+    }
+    &-title{
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-size: 28px;
+        font-family: "Gelroy";
+    }
+    &-link{
+        font-size: 18px;
+        align-items: center;
+        gap: 8px;
+        font-weight: 400;
+        font-family: "Gelroy";
+        line-height: normal;
+        display: flex;
+        & span{
+            transform: rotate(-45deg);
+        }
+    }
+    &-text{
+        color: #adadad;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-size: 18px;
+        font-family: "Gelroy";
+
+    }
+}

@@ -1,0 +1,108 @@
+.ns {
+    &-header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding: 22px 25px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+        z-index: 1001;
+        &-logo {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            color: #06048c;
+            text-decoration: none;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        &-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+        }
+
+        &-link {
+            display: inline-block;
+            color: #000;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            &:hover{
+                color: #06048c;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: #06048c;
+                transition: width .3s;
+            }
+
+            &:hover::after {
+                width: 100%;
+                transition: width .3s;
+            }
+        }
+
+        &-phone {
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            gap: 8px;
+            border-bottom: 2px solid transparent;
+
+            &:hover {
+                color: #06048c;
+                border-bottom: 2px solid #06048c;
+            }
+        }
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+.va-dropdown__content{
+    z-index: 1004;
+}
+.va-button.mobile-btn{
+    display: none;
+}
+.ns-mobile{
+    display: none;
+}
+
+@media (max-width:1100px) {
+    .va-button.mobile-btn{
+        display: flex;
+    }
+    .ns-mobile{
+        position: fixed;
+        left: -2000px;
+        top: 80px;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 1000;
+        &.active{
+            left: 0;
+        }
+    }
+    .ns-header-link{
+        display: none;
+    }
+    .ns-header-right button{
+        display: none;
+    }
+}

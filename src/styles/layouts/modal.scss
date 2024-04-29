@@ -1,0 +1,41 @@
+.modal {
+    &-close-btn {
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid gray;
+        padding: 0px 3px;
+        top: -22px;
+        right: -20px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+        &:hover {
+            transform: scale(1.05);
+            border: 1px solid #06048c;
+        }
+    }
+    &-btn{
+        padding: 10px 20px;
+        font-size: 18px;
+        color: #737373;
+        background-color: #f2f7fa;
+        border-radius: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        &.active{
+            color: white;
+            background-color: #06048c;
+        }
+    }
+    &-input {
+        border-radius: 20px;
+        background: #f2f7fa;
+        color: #737373;
+        font-size: 18px;
+        font-style: normal;
+        height: 65px;
+        padding: 5px 20px;
+        font-weight: 400;
+        line-height: 130%;
+        grid-column: 1 / 3;
+    }
+}

@@ -1,0 +1,36 @@
+.footer{
+    margin-top: 100px;
+    padding: 40px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    background-color: #fff;
+    
+}
+.footer-cart{
+    width: 60%;
+    min-width: 60%;
+    & iframe{
+        width: 100%;
+    }
+}
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-title{
+        font-family: "Open Sans", sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+}
+a.footer-right-title{
+    &:hover{
+        color: #4130e0;
+        text-decoration: underline;
+    }
+}
+.footer-bottom{
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
